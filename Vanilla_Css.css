@@ -7,7 +7,6 @@
 .carousel-container{
     width: 48%;
     margin: auto;
-    border: 5px solid black;
     overflow: hidden;
     position: relative;
 }
@@ -26,7 +25,6 @@
     left: 28%;
     color: black;
     cursor: pointer;
-    size: 10px;
 }
 
 #nextBtn{
