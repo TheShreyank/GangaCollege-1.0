@@ -39,7 +39,7 @@ h3{
     padding: 50px;
     color: red;
     font-size: 30px;
-    animation: blink 1 linear infinite;
+    animation: blink 1s linear infinite;
     font-weight: bold;
 }
 
@@ -184,8 +184,8 @@ caption{
 
 
 .carousel-container{
-    width: 48%;
-    margin: auto;
+    width: 47%;
+    margin: auto;   
     overflow: hidden;
     position: relative;
 }
@@ -216,3 +216,16 @@ caption{
     color: black;
     cursor: pointer;
 }
+
+div {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  table {
+    width:75%;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
