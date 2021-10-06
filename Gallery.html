@@ -48,8 +48,6 @@
                       <li><a href="TrainingPlacement.html">Training & Placement Cell</a></li> -->
                   </ul>
                 </li>
-        
-            <li> <a href="/Courses.html">&nbsp;Courses&nbsp;&nbsp;</a> </li>
             <li> <a href="/Admission.html">&nbsp;Admission&nbsp;&nbsp;</a> </li>
             <li> <a style="color: #00ccff;" href="/Gallery.html">&nbsp;Gallery&nbsp;&nbsp;</a> </li>
             <li> <a href="/Affiliations.html">&nbsp;Staff&nbsp;&nbsp;</a> </li>
@@ -60,14 +58,14 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-    </nav>
+    </nav><br>
     
         <script src="app.js"></script>
 
 
     <!-- VAnilla Code -->
     
-    <div class="carousel-container">
+    <!-- <div class="carousel-container">
         <div class="carousel-slide">
             <img src="/Photos/Welcome.jpg" id="lastClone" alt="">
             <img src="/Photos/chemlab.jpg" alt="">
@@ -84,7 +82,95 @@
 
     <button id="prevBtn">Prev</button>
     <button id="nextBtn">Next</button>
-    <script src="Vanilla.js"></script>
+    <script src="Vanilla.js"></script> -->
+
+
+    <!-- POP GALLERY -->
+    <div class="container">      
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="/Photos/Welcome.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="/Photos/ClassRo.jpg" style="width:100%">
+        </div>
+         
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="/Photos/ClassRo2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="/Photos/SomethingReNameLater.jpg" style="width:100%">
+        </div>
+         
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="/Photos/Labz.jpg" style="width:100%">
+        </div>
+         
+         <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="/Photos/Computers.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="/Photos/Welcome.jpg" style="width:100%" onclick="currentSlide(1)" alt="College Staff">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/Photos/ClassRo.jpg" style="width:100%" onclick="currentSlide(2)" alt="Class Room">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/Photos/ClassRo2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Class Room">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/Photos/SomethingReNameLater.jpg" style="width:100%" onclick="currentSlide(4)" alt="Laboratory">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="/Photos/Labz.jpg" style="width:100%" onclick="currentSlide(5)" alt="Laboratory">
+          </div>
+      <div class="column">
+            <img class="demo cursor" src="/Photos/Computers.jpg" style="width:100%" onclick="currentSlide(6)" alt="Laboratory">
+          </div>
+        </div>
+      </div><br>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
 
 
 <!-- footer -->
