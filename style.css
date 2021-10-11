@@ -252,6 +252,7 @@ div {
   }
   table {
     width:75%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   table, th, td {
     border: 1px solid black;
@@ -505,3 +506,160 @@ img {
   .demo:hover {
     opacity: 1;
   }
+
+ /* END GALLERGY CODE */
+
+
+
+ /* CONTACT US FORM */
+
+
+/* 
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: black;
+} */
+
+.container{
+    display: flex;
+    margin-top: 40px;
+    transform: translateX(-20px);
+    transform: translateY(-10px);
+    height: 400px;
+}
+
+.container .contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h2{
+    font-weight: 500;
+    color: rgb(11, 94, 94);
+}
+
+.section1{
+    background-color: white;
+    padding-left: 600px;
+    padding-bottom: 0px;
+}
+
+.containBox{
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #8a8383;
+    background-color: white;
+    border-radius: 8px;
+    transform: translateY(-400px);
+    padding-bottom: 0px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid rgba(0, 0, 0, 0.199);
+    margin-top: 5px;
+}
+
+textarea{
+    resize: none;
+
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: rgb(61, 107, 177);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+}
+
+#status{
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* index gallery css */
+
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}

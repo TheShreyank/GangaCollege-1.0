@@ -62,57 +62,73 @@
         <script src="app.js"></script>
     
         <!-- pops notes -->
-    
-    <footer>
-        <div class="col-1-2-3">
-            <p class="font-medium bold uppercase nospace push10"><b>Postal address:</b></p>
-                <address class="block push20">
-                    Ganga Foundation Society, <br>
-                    Bathinda-Manasa Road,<br>
-                    Kotshamir, Bathinda – 151 001<br>      
-                </address>
-            <p class="font-medium bold uppercase nospace push10"><b>Email:</b></p>
-            <ul class="nospace push20">
-              <li>gangafoundationsociety@gmail.com</li>
-              <li>principalgangacollege@gmail.com</li>
-            </ul>
-            <p class="font-medium bold uppercase nospace push10"><b>Phone:</b></p>
-            <ul class="nospace push20">
-              <li>+91 164 2921551</li>
-              <li>+91 164 2921151</li>
-            </ul>
-            <p class="font-medium bold uppercase nospace push10"><b>Mobile:</b></p>
-            <ul class="nospace push20">
-              <li>+91 97801 32143</li>
-              <li>+91 88475 49960</li>
-            </ul>
-         </div>
 
-    <div class="col-1-2">  
-         <form style="width:400px; margin: 0 auto;">
-        <h3>Contact Form</h3>     
-            <div class="required-field-block">
-                <input type="text" placeholder="Name" class="form-control" style="line-height:30px; width:350px;margin-top:8px">
+        <section>
+            <div class="container">
+                <div class="contactInfo">
+                    <div style="transform: translateX(-300px);" class="box">
+                        <div class="text">
+                           <h2>Postal Address:</h2>
+                           <p>&nbsp;Ganga Foundation Society, <br>
+                               &nbsp;Bathinda-Manasa Road,<br>
+                               &nbsp;Kotshamir, Bathinda – 151 001<br>
+                            </p>
+                        </div> 
+                    </div><br>
+                    <div style="transform: translateX(-300px);" class="box">
+                        <div class="text">
+                           <h2>Email:</h2>
+                           <p>&nbsp;gangafoundationsociety@gmail.com&nbsp;&nbsp;<br>
+                               &nbsp;principalgangacollege@gmail.com&nbsp;&nbsp;<br>
+                            </p>
+                        </div> 
+                    </div><br>
+                    <div style="transform: translateX(-300px);" class="box">
+                        <div class="text">
+                           <h2>Phone:</h2>
+                           <p>
+                              &nbsp;+91 164 2921551<br>
+                              &nbsp;+91 164 2921151<br>
+                            </p>
+                        </div> 
+                    </div><br>
+                    <div style="transform: translateX(-300px);" class="box">
+                        <div class="text">
+                           <h2>Mobile:</h2>
+                           <p>
+                              &nbsp;+91 97801 32143<br>
+                              &nbsp;+91 88475 49960<br>
+                            </p>
+                        </div> 
+                    </div><br>
+                </div>
             </div>
-            <div class="required-field-block">
-                <input type="text" placeholder="Email" class="form-control" style="line-height:30px;width:350px;margin-top:8px">
+        </section>
+
+        <section style="transform: translateX(200);" class="section1">
+            <div class="containBox">
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form><br>
             </div>
-            <input type="number" placeholder="Phone" class="form-control" style="line-height:30px;width:350px;margin-top:8px">
-            <div class="required-field-block">
-                <textarea rows="3" class="form-control" placeholder="Message"  style="line-height:30px;width:400px;margin-top:8px"></textarea>
-            </div>
-            <button class="btn btn-primary btn-send" style="width:90px; height:25px; margin-top:5px;">Send</button>
-        </form>
-    
-    <script>
-    $(function() {
-        $('.required-icon').tooltip({
-            placement: 'left',
-            title: 'Required field'
-            });
-    });
-    </script> 
-    </div>
+        </section>
 
     <!-- footer -->
     <div class="footer-container">
