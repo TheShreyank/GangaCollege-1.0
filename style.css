@@ -173,13 +173,13 @@ caption{
 
 /* DROP DOWN CODE */
 
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
     max-width: 1000000px;
-  }
+  } */
   
-.dropdown-content {
+ .dropdown-content {
     display: none;
     position: absolute;
     background-color: #000000;
@@ -187,7 +187,7 @@ caption{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,72);
     padding: 12px 20px;
     z-index: 1;
-}
+} 
   
 .dropdown-content > li > a:hover, .dropdown-content > li > a:focus {
       color: rgb(141, 12, 12);
@@ -698,4 +698,14 @@ button[type="submit"]:hover{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     
+}
+.UnderConst {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color:red;
+    font-family:"Courier New",Courier, monospace;
+    font-size:40px;
 }
